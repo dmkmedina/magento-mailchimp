@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <!-- module -->
+    <modules>
+        <Developmint_Mailchimp>
+            <version>1.0</version>
+        </Developmint_Mailchimp>
+    </modules>
+    <!-- frontend -->
+    <frontend>
+        <!-- events -->
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <Developmint_Mailchimp_model_observer>
+                        <type>singleton</type>
+                        <class>Developmint_Mailchimp_Model_Observer</class>
+                        <method>subscribe</method>
+                    </Developmint_Mailchimp_model_observer>
+                </observers>
+            </sales_order_place_after>
+        </events>
+    </frontend>
+    <global>
+        <models>
+            <developmintmailchimp>
+                <class>Developmint_Mailchimp_Model</class>
+            </developmintmailchimp>
+        </models>
+        <helpers>
+            <developmintmailchimp>
+                <class>Developmint_Mailchimp_Helper</class>
+            </developmintmailchimp>
+        </helpers>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <developmint>
+                                            <title>Developmint - All</title>
+                                        </developmint>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

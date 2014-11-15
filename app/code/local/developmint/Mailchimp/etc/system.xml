@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <developmint translate="label" module="mailchimp">
+            <label>Developmint Extensions</label>
+            <sort_order>100</sort_order>
+        </developmint>
+    </tabs>
+    <sections>
+        <developmint translate="label" module="mailchimp">
+            <label>Developmint Settings</label>
+            <tab>developmint</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <developmint_group translate="label" module="mailchimp">
+                    <label>Developmint Mailchimp Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <developmint_mailchimp_list_id translate="label">
+                            <label>List ID: </label>
+                            <comment>The Mailchimp list ID</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </developmint_mailchimp_list_id>
+                        <developmint_mailchimp_api_key translate="label">
+                            <label>API Key: </label>
+                            <comment>The API key for the Mailchimp account</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </developmint_mailchimp_api_key>
+                    </fields>
+                </developmint_group>
+            </groups>
+        </developmint>
+    </sections>
+</config>
